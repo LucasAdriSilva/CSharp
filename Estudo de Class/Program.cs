@@ -10,7 +10,17 @@ namespace Estudo_de_Class
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Word!");
+            Class1 c1 = new Class1();
+
+
+
+            Console.WriteLine("Olá, tudo bem ?");
+            Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_");
+
+            Console.Write("Escre algo: ");
+            c1.Propriedade = Console.ReadLine();
+            Console.WriteLine("Esse algo em maiusculosfica: "+c1.Propriedade);
+            Console.ReadLine();
         }
     }
 }
