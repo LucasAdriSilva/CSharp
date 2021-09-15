@@ -11,8 +11,8 @@ namespace AreaRetangulo
         }
 
         //Base do Retângulo
-        private int baseret;
-        public int Base
+        private Double baseret;
+        public Double Base
         {
             get { return baseret; }
             set
@@ -25,9 +25,9 @@ namespace AreaRetangulo
 
 
         //Altura do Retângulo
-        private int alturadoret;
+        private Double alturadoret;
 
-        public int Altura
+        public Double Altura
         {
             get { return alturadoret; }
             set
@@ -37,7 +37,7 @@ namespace AreaRetangulo
             }
         }
 
-        public int Area
+        public Double Area
         {
             get { return alturadoret * baseret; }
         }

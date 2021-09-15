@@ -14,12 +14,11 @@ namespace AreaRetangulo
             Console.WriteLine("Calcula a area de um RETANGULO");
 
             Console.Write("Informe a Altura: ");
-            ret.Altura = Convert.ToInt32(Console.ReadLine());            
+            ret.Altura = Convert.ToDouble(Console.ReadLine());            
 
             Console.Write("Informe a Base: ");
-            ret.Base = Convert.ToInt32(Console.ReadLine());
-             
-
+            ret.Base = Convert.ToDouble(Console.ReadLine());
+            
             ret.ExibeDados();
             Console.ReadKey();
         }
