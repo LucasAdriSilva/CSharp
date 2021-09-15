@@ -8,28 +8,29 @@ namespace IMC
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Pessoa p = new Pessoa();
-
+            double x; ;
             Console.WriteLine("Calculando IMC");
-            Console.WriteLine("-----------------------");
+            Console.WriteLine("-----------^-----------");
 
             Console.Write("Digite seu nome: ");
-            p.Nome = float.Parse(Console.ReadLine());
+            p.Nome = Console.ReadLine();
 
             Console.Write("Digite sua idade: ");
             p.Idade = Convert.ToInt32(Console.ReadLine());
             
             Console.Write("Digite o seu Peso: ");
-            p.peso = Convert.ToInt32(Console.ReadLine());
-            Convert.ToDouble(p.peso); 
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(x);
             
-            Console.Write("Digite o sua Atura: ");
-            p.altura = Convert.ToInt32(Console.ReadLine());
-            Convert.ToDouble(p.altura);
+            Console.Write("Digite o sua Altura: ");
+            p.Altura = Convert.ToDouble(Console.ReadLine());            
 
             p.ExibirDados();
+            
+            Console.ReadKey();
             
 
 
