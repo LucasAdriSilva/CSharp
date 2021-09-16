@@ -6,10 +6,26 @@ using System.Threading.Tasks;
 
 namespace ControleDeAnimais
 {
-    public enum TipoAnimal {Cachorro, Gato, Peixe}
+    public enum TipoAnimal {Cachorro, Gato, Peixe};
 
     public class Animal
-    {   // Estrutura da propriedade
+    {
+        //Construtor
+        public Animal()
+        {
+            this.Nome = "";
+            this.Tipo = TipoAnimal.Peixe;
+        }
+        //Construtor sobrecarga
+        public Animal(String nome, TipoAnimal tipo)
+        {
+            this.Nome = nome;
+            this.Tipo = tipo;
+        }
+        
+        
+        
+        // Estrutura da propriedade
         private String nome;
 
         public String Nome
@@ -25,7 +41,7 @@ namespace ControleDeAnimais
         {   // valores definidos pelo dev - Cachorro, Gato, Peixe
             get { return tipo; }
             set { tipo = value;  }                   
-            }
+            
         }
     }
 }
