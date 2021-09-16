@@ -7,8 +7,8 @@ namespace IMC
         public Pessoa()
         {
             this.Nome = "";
-            this.peso = 0;
-            this.altura = 0;
+            this.peso = 0f;
+            this.altura = 0f;
             this.idade = 0;
         }
 
@@ -40,7 +40,7 @@ namespace IMC
         public Double Peso
         {
             get { return peso; }
-            set { peso = value; }
+            set { if (value >= 0) { peso = value; } else peso = 0; }
         }
 
 
@@ -48,10 +48,10 @@ namespace IMC
         //public Double Altura { get; set; }        
 
 
-        public Double Calculo
+        /*public Double Calculo
         {
             get { return peso / (altura * altura); }
-        }
+        }*/
 
         //public void calcularImc(Double Peso, Double Altura) {
         //    var imc = peso / (altura*altura) ;
