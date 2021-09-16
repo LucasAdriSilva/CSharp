@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace ControleDeAnimais
 {
+    public enum TipoAnimal {Cachorro, Gato, Peixe}
+
     public class Animal
     {   // Estrutura da propriedade
         private String nome;
@@ -17,19 +19,12 @@ namespace ControleDeAnimais
         }
         // Estrutura da propriedade
 
-        private String tipo;
+        private TipoAnimal tipo;
 
-        public String Tipo
+        public TipoAnimal Tipo
         {   // valores definidos pelo dev - Cachorro, Gato, Peixe
             get { return tipo; }
-            set {
-                if (value == "Cachorro" || value == "Gato" || value == "Peixe")
-                {
-                    tipo = value;
-                }
-                else {
-                    tipo = "Peixe";
-                }                   
+            set { tipo = value;  }                   
             }
         }
     }
