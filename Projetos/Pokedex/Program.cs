@@ -15,6 +15,7 @@ namespace Pokedex
             while (resp !=0)
             {
                 resp = Menu();
+                Console.Clear();
                 if (resp == 1) 
                 {
                     pokedex.ListarPokemons();
@@ -32,15 +33,24 @@ namespace Pokedex
                     Random r = new Random();
                     codigo = r.Next(0, pokedex.Pokemons.Count);
                     PokemonPlus pPc = pokedex.Pokemons[codigo];
+                Console.Clear();
 
                     //Batalha
+                    
+                    Console.WriteLine("Dados dos poekemons que irão lutar");
+                    Console.WriteLine("---------------------------------------------");
+                    Console.WriteLine("Dados do seu Pokemon: ");
+                    pPlayer.ExibirDadosPokemonPlus();
+                    Console.WriteLine("---------------------------------------------");
+                    Console.WriteLine("Dados do PC: ");
+                    pPc.ExibirDadosPokemonPlus();                    
                     if (pPlayer.Poder >= pPc.Poder)
                     {                        
-                        Console.WriteLine("Parabens você ganhou!");              
+                        Console.WriteLine("----------------------------------------------------------------->Parabens você ganhou!");              
                     }
                     else 
                     { 
-                        Console.WriteLine("Que pena você perdeu :(");
+                        Console.WriteLine("----------------------------------------------------------------->Que pena você perdeu :(");
 
                     }
 
