@@ -8,6 +8,7 @@ namespace PooPerguntaeResposta
 {
     public class Pergunta
     {
+        
         public Pergunta()
         {
             this.Texto = "";

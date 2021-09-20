@@ -10,7 +10,27 @@ namespace PooPerguntaeResposta
     {
         static void Main(string[] args)
         {
-            Pergunta p = new Pergunta("Qual é seu nome ?","Meu nome é Lucas." );
+            PerguntaPlus p = new PerguntaPlus();
+            p.Texto = "Qual é o o site que possui um ótimo conteudo sobre programação?";
+            p.Resposta = "www.google.com.br";
+            p.Dica = "Você usa direto!";
+
+            Console.WriteLine("Tente adivinhar a pergunta");
+            Console.WriteLine("Perunta: "+p.Texto);
+            Console.WriteLine("Dica: "+p.Dica);
+            Console.Write("Resposta: ");
+            String resposta = Console.ReadLine();
+
+            if (p.Resposta.ToUpper() == resposta.ToUpper())
+            {
+                Console.WriteLine("Parabens você acertou");
+            }
+            else 
+            {
+                Console.WriteLine("ERRROOO");
+                Console.WriteLine("Resposta certo é https:\\www.Dfilito.com.br... Animal ");
+            }
+            Console.ReadKey();
         }
     }
 }
