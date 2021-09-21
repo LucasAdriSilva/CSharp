@@ -68,7 +68,7 @@ namespace PooJogoAdivinhacao
             p = new NovaPergunta("Qual é a soma de 20 + 5000?", "5020", "5020");
             lista.Add(p);
 
-            lista.Add(new NovaPergunta("Aplicativo de assistir filmes", "Netflix", "net + flix");
+            lista.Add(new NovaPergunta("Aplicativo de assistir filmes", "Netflix", "net + flix"));
             return lista;
         }
     }
