@@ -20,7 +20,7 @@ This project is the progression of learning the C# language. Starting from basic
 ## :hourglass: How it works
  1. Fork this repository;
  2. Open the file "Projetos"
- 3. Inside this file are all projects including the basics of C#
+ 3. Inside this file is all projects including the basics of C#
  
  
 
