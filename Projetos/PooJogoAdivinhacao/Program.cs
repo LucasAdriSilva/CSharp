@@ -8,7 +8,7 @@ namespace PooJogoAdivinhacao
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {   
             //Lista de Perguntas
             List<NovaPergunta> perguntas;
