@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace NewJogo
 {
-    class Player
+    public class Player
     {
+
+        public Player()
+        {
+            this.Age = 0;
+            this.Name = "";
+            this.Alive = true;
+            
+        }
         public Player(String name, int age)
         {
             this.Age = age;
@@ -17,9 +25,9 @@ namespace NewJogo
             this.Skill = "";
         }
 
-        public int Age{ get; }
+        public int Age{ get; set; }
 
-        public String Name { get;}
+        public String Name { get; set; }
 
         public String Skill { get; set; }
 
@@ -31,17 +39,7 @@ namespace NewJogo
             set { pontos = value; }
         }
 
-        private Boolean alive;
-
-        public Boolean Alive
-        {
-            get { return alive; }
-            set {
-                if (alive == false) {
-                    Console.WriteLine("Você morreu! Volte para o inicio!");
-                   }
-                }
-        }
+        public Boolean Alive { get; set; }
 
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="F.cs" />
     <Compile Include="ListaDeNpc.cs" />
+    <Compile Include="Metodos.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
