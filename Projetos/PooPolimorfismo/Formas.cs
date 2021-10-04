@@ -20,7 +20,7 @@ namespace PooPolimorfismo
             this.Base = Base;
             this.Altura = Altura;
         }
-        public String FormaGeometrica { get; set; }
+        public virtual String FormaGeometrica { get; set; }
         public Double Base { get; set; }
 
         public Double Altura { get; set; }
