@@ -8,18 +8,17 @@ namespace PooPolimorfismo
 {
     public class Quadrado : Formas
     {
-        public Quadrado() : base() { }
-        public Quadrado(String Forma, Double Base, Double Altura) : base(Forma, Base, Altura) 
-        { }
-
-        private String formageometrica;
-
-        public override string FormaGeometrica { 
-            get => base.FormaGeometrica; 
-            
+        public Quadrado() : base() {
+            base.FormaGeometrica = "Quadrado";
         }
+        public Quadrado(Double Base, Double Altura) : base("Quadrado", Base, Altura){ }
         
-
+        public override string FormaGeometrica { 
+            //get => base.FormaGeometrica;
+            get{
+                return base.FormaGeometrica;            
+            }
+        }      
         public override Double CalcularArea() 
         {
             return this.Base * this.Altura;
