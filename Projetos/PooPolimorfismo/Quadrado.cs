@@ -18,7 +18,8 @@ namespace PooPolimorfismo
             get{
                 return base.FormaGeometrica;            
             }
-        }      
+        }
+        public String Teste { get; set; }
         public override Double CalcularArea() 
         {
             return this.Base * this.Altura;
