@@ -17,7 +17,7 @@ namespace PooContaEstudante
 
         }
 
-        private Double saldo;
+        protected Double saldo;
         public Double Saldo
         {
             get { return saldo; }
