@@ -12,9 +12,17 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        DataTable dt = new DataTable();
         public Form1()
         {
             InitializeComponent();
+            Inicializar();
         }
+        private void Inicializar()
+        {
+            dt = Livro.GetLivros();
+            dgvLivros.DataSource = dt;
+        }
+
     }
 }

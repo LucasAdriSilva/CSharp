@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         public int Saldo_atual { get; set; }
         public char Ativo { get; set; }
 
-        public static DataTable GetLivros(bool ativos) 
+        public static DataTable GetLivros() 
         {
             var dt = new DataTable();
             var sql = "SELECT id, isbn, titulo, autores, unitario, saldo_atual, FROM livros.livros";
