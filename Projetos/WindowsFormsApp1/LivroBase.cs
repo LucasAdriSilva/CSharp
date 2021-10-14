@@ -2,9 +2,7 @@
 
 namespace WindowsFormsApp1
 {
-    internal class LivroBase
+    internal class LivroBase : LivroBaseBase
     {
-
-        public static DataTable GetLivros(bool ativos);
     }
 }
