@@ -40,13 +40,13 @@ namespace AppCrud
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textId = new System.Windows.Forms.TextBox();
-            this.textMarca = new System.Windows.Forms.TextBox();
-            this.textModelo = new System.Windows.Forms.TextBox();
-            this.textAno = new System.Windows.Forms.TextBox();
-            this.textCor = new System.Windows.Forms.TextBox();
-            this.textFabricacao = new System.Windows.Forms.TextBox();
-            this.textValor = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtAno = new System.Windows.Forms.TextBox();
+            this.txtCor = new System.Windows.Forms.TextBox();
+            this.txtFabrica = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.cbCombustivel = new System.Windows.Forms.ComboBox();
             this.cbAutomatico = new System.Windows.Forms.ComboBox();
             this.cbAtivo = new System.Windows.Forms.ComboBox();
@@ -169,69 +169,70 @@ namespace AppCrud
             this.label9.Text = "Ativo";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // textId
+            // txtId
             // 
-            this.textId.Location = new System.Drawing.Point(98, 115);
-            this.textId.MaxLength = 10;
-            this.textId.Name = "textId";
-            this.textId.Size = new System.Drawing.Size(128, 20);
-            this.textId.TabIndex = 1;
-            this.textId.Leave += new System.EventHandler(this.textId_Leave);
+            this.txtId.Location = new System.Drawing.Point(98, 115);
+            this.txtId.MaxLength = 10;
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(128, 20);
+            this.txtId.TabIndex = 1;
+            this.txtId.Leave += new System.EventHandler(this.textId_Leave);
             // 
-            // textMarca
+            // txtMarca
             // 
-            this.textMarca.Location = new System.Drawing.Point(98, 151);
-            this.textMarca.MaxLength = 30;
-            this.textMarca.Name = "textMarca";
-            this.textMarca.Size = new System.Drawing.Size(388, 20);
-            this.textMarca.TabIndex = 2;
-            this.textMarca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMarca.Location = new System.Drawing.Point(98, 151);
+            this.txtMarca.MaxLength = 30;
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(388, 20);
+            this.txtMarca.TabIndex = 2;
+            this.txtMarca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMarca.TextChanged += new System.EventHandler(this.textMarca_TextChanged);
             // 
-            // textModelo
+            // txtModelo
             // 
-            this.textModelo.Location = new System.Drawing.Point(98, 185);
-            this.textModelo.MaxLength = 30;
-            this.textModelo.Name = "textModelo";
-            this.textModelo.Size = new System.Drawing.Size(387, 20);
-            this.textModelo.TabIndex = 3;
-            this.textModelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtModelo.Location = new System.Drawing.Point(98, 185);
+            this.txtModelo.MaxLength = 30;
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(387, 20);
+            this.txtModelo.TabIndex = 3;
+            this.txtModelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textAno
+            // txtAno
             // 
-            this.textAno.Location = new System.Drawing.Point(98, 220);
-            this.textAno.MaxLength = 4;
-            this.textAno.Name = "textAno";
-            this.textAno.Size = new System.Drawing.Size(128, 20);
-            this.textAno.TabIndex = 4;
-            this.textAno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAno.Location = new System.Drawing.Point(98, 220);
+            this.txtAno.MaxLength = 4;
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(128, 20);
+            this.txtAno.TabIndex = 4;
+            this.txtAno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textCor
+            // txtCor
             // 
-            this.textCor.Location = new System.Drawing.Point(98, 255);
-            this.textCor.MaxLength = 10;
-            this.textCor.Name = "textCor";
-            this.textCor.Size = new System.Drawing.Size(128, 20);
-            this.textCor.TabIndex = 6;
-            this.textCor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCor.Location = new System.Drawing.Point(98, 255);
+            this.txtCor.MaxLength = 10;
+            this.txtCor.Name = "txtCor";
+            this.txtCor.Size = new System.Drawing.Size(128, 20);
+            this.txtCor.TabIndex = 6;
+            this.txtCor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textFabricacao
+            // txtFabrica
             // 
-            this.textFabricacao.Location = new System.Drawing.Point(357, 220);
-            this.textFabricacao.MaxLength = 10;
-            this.textFabricacao.Name = "textFabricacao";
-            this.textFabricacao.Size = new System.Drawing.Size(128, 20);
-            this.textFabricacao.TabIndex = 5;
-            this.textFabricacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textFabricacao.TextChanged += new System.EventHandler(this.textFabricacao_TextChanged);
+            this.txtFabrica.Location = new System.Drawing.Point(357, 220);
+            this.txtFabrica.MaxLength = 10;
+            this.txtFabrica.Name = "txtFabrica";
+            this.txtFabrica.Size = new System.Drawing.Size(128, 20);
+            this.txtFabrica.TabIndex = 5;
+            this.txtFabrica.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFabrica.TextChanged += new System.EventHandler(this.textFabricacao_TextChanged);
             // 
-            // textValor
+            // txtValor
             // 
-            this.textValor.Location = new System.Drawing.Point(357, 255);
-            this.textValor.MaxLength = 12;
-            this.textValor.Name = "textValor";
-            this.textValor.Size = new System.Drawing.Size(128, 20);
-            this.textValor.TabIndex = 7;
-            this.textValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtValor.Location = new System.Drawing.Point(357, 255);
+            this.txtValor.MaxLength = 12;
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(128, 20);
+            this.txtValor.TabIndex = 7;
+            this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cbCombustivel
             // 
@@ -354,13 +355,13 @@ namespace AppCrud
             this.Controls.Add(this.cbAtivo);
             this.Controls.Add(this.cbAutomatico);
             this.Controls.Add(this.cbCombustivel);
-            this.Controls.Add(this.textValor);
-            this.Controls.Add(this.textFabricacao);
-            this.Controls.Add(this.textCor);
-            this.Controls.Add(this.textAno);
-            this.Controls.Add(this.textModelo);
-            this.Controls.Add(this.textMarca);
-            this.Controls.Add(this.textId);
+            this.Controls.Add(this.txtValor);
+            this.Controls.Add(this.txtFabrica);
+            this.Controls.Add(this.txtCor);
+            this.Controls.Add(this.txtAno);
+            this.Controls.Add(this.txtModelo);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -393,13 +394,13 @@ namespace AppCrud
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textId;
-        private System.Windows.Forms.TextBox textMarca;
-        private System.Windows.Forms.TextBox textModelo;
-        private System.Windows.Forms.TextBox textAno;
-        private System.Windows.Forms.TextBox textCor;
-        private System.Windows.Forms.TextBox textFabricacao;
-        private System.Windows.Forms.TextBox textValor;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.TextBox txtAno;
+        private System.Windows.Forms.TextBox txtCor;
+        private System.Windows.Forms.TextBox txtFabrica;
+        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.ComboBox cbCombustivel;
         private System.Windows.Forms.ComboBox cbAutomatico;
         private System.Windows.Forms.ComboBox cbAtivo;

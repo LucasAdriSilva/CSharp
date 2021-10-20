@@ -53,14 +53,28 @@ namespace AppCrud
             BuscarVeiculoId(id);
         }
 
-        private void BuscarVeiculoId()
+        private void BuscarVeiculoId(int id)
         {
             try
             {
-                using (var dbContext = new AgenciaAutoEntities()) 
+                var veiculo = new Veiculo();
+                veiculo.GetVeiculo(id);
+
+                if (veiculo != null)
                 {
-                    var veiculo = dbContext.New_Crud.Find(id);
+                    txtId.Text = veiculo.Id.ToString();
+                    txtMarca.Text = veiculo.Nome;
+                    txtModelo.Text = veiculo.Modelo;
+                    txtAno.Text = veiculo.Ano.ToString();
+                    txtFabrica.Text = veiculo.Fabricacao.ToString();
+                    txtCor.Text = veiculo.Cor;
+                    txtValor.Text = veiculo.Valor.ToString();
                 }
+                else {
+                    MessageBox.Show("Veiculo não encontrado");
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -68,5 +82,9 @@ namespace AppCrud
             }
         }
 
+        private void textMarca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
