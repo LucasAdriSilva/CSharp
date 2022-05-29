@@ -57,6 +57,12 @@ namespace Primeiro {
             Console.WriteLine($"Testando {p1} uhasauhsuhas {p2} asuhausuahsuha {p3}");
 
             Console.ReadKey();
+
+            /*  double p = (xA + xB + xC) / 2.0;
+                double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
+                area de um triangulo sem saber os aldos deles formual de HERON
+             */
+
         }
     }
 }
