@@ -18,7 +18,14 @@ namespace Construtor {
             //int quantidade = int.Parse(Console.ReadLine());
 
             //Pegadno a entrada do usuário e colocando em váriaveis - depois usando uma isntancia com construtor 
-            Produto p = new Produto(nome, preco);
+            //Produto p = new Produto(nome, preco);
+
+
+            Produto p = new Produto() { 
+                Nome = "Tv", 
+                Preco = 900.00, 
+                Quantidade = 10 
+            };
 
             Console.WriteLine();
             Console.WriteLine("Dados do produto: " + p);
