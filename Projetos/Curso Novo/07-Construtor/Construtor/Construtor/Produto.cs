@@ -5,18 +5,19 @@ namespace Course {
         public string Nome;
         public double Preco;
         public int Quantidade;
-
-        public Produto(string nome, double preco) {
-            Nome = nome;
-            Preco = preco;
+        public Produto() {
+            this.Quantidade = 10;
         }
-        public Produto() { }
 
-        //public Produto(string nome, double preco, int quantidade) {
-        //    this.Nome = nome;
-        //    this.Preco = preco;
-        //    this.Quantidade = quantidade;
-        //}
+        public Produto(string nome, double preco) : this(){
+            this.Nome = nome;
+            this.Preco = preco;
+        }
+
+        //Usando o This para usar outro construtor
+        public Produto(string nome, double preco, int quantidade) : this(nome,preco) {
+            this.Quantidade = quantidade;
+        }
 
         public double ValorTotalEmEstoque() {
             return Preco * Quantidade;
