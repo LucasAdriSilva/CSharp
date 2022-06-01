@@ -9,9 +9,10 @@ using System.Globalization;
 namespace Encapsulamento {
     internal class Produto {
         private string _nome;
-        private double _preco;
-        private int _quantidade;
+        public double Preco { get; private set; }
 
+        public int Quantidade { get; private set; }
+    
         public string Nome {
             get { return _nome; }
             set {
@@ -21,55 +22,27 @@ namespace Encapsulamento {
             }
         }
 
-        public double Preco { 
-            get { return _preco; }
-        }
-
-        public int Quantidade {
-            get { return _quantidade; }
-        }
-
-        //public string GetNome() { 
-        //    return _nome;   
-        //}
-
-        //public void SetNome(string nome) { 
-        //    if(nome != null && nome.Length > 1){
-        //    _nome = nome;
-        //    }
-        //}
-
-        //public double GetPreco() {
-        //    return _preco;
-        //}
-
-        //public int GetQuantiade() {
-        //    return _quantidade;
-        //}
-
-
-
         public Produto(string nome, double preco, int quantidade) {
             _nome = nome;
-            _preco = preco;
-            _quantidade = quantidade;
+            Preco = preco;
+            Quantidade = quantidade;
         }
 
         public double ValorTotalEmEstoque() {
-            return _preco * _quantidade;
+            return Preco * Quantidade;
         }
         public void AdicionarProdutos(int quantidade) {
-            _quantidade += quantidade;
+            Quantidade += quantidade;
         }
         public void RemoverProdutos(int quantidade) {
-            _quantidade -= quantidade;
+            Quantidade -= quantidade;
         }
         public override string ToString() {
             return _nome
             + ", $ "
-            + _preco.ToString("F2", CultureInfo.InvariantCulture)
+            + Preco.ToString("F2", CultureInfo.InvariantCulture)
             + ", "
-            + _quantidade
+            + Quantidade
             + " unidades, Total: $ "
             + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
