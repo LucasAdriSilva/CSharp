@@ -8,12 +8,19 @@ using System.Globalization;
 
 namespace Encapsulamento {
     internal class Produto {
-        private string _nome;
-        public double Preco { get; private set; }
+        private string _nome;                                        // Atributo privativo
+        public double Preco { get; private set; } 
 
-        public int Quantidade { get; private set; }
-    
-        public string Nome {
+        public int Quantidade { get; private set; }                  // propriedades  alto emplementadas
+
+        public Produto() { 
+        }
+        public Produto(string nome, double preco, int quantidade) {  // Construtores
+            _nome = nome;
+            Preco = preco;
+            Quantidade = quantidade;
+        }
+        public string Nome {                                         //propriedades custumizadas 
             get { return _nome; }
             set {
                 if (value != null && value.Length > 1) {
@@ -21,14 +28,7 @@ namespace Encapsulamento {
                 }
             }
         }
-
-        public Produto(string nome, double preco, int quantidade) {
-            _nome = nome;
-            Preco = preco;
-            Quantidade = quantidade;
-        }
-
-        public double ValorTotalEmEstoque() {
+        public double ValorTotalEmEstoque() {                          // Medotos
             return Preco * Quantidade;
         }
         public void AdicionarProdutos(int quantidade) {
