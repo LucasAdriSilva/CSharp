@@ -44,7 +44,7 @@ namespace Construtor {
             p.RemoverProdutos(qte);
            
             Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
+            Console.WriteLine("Dados atualizados: " + p.ToString());
         }
     }
 }
