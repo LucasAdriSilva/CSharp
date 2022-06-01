@@ -9,6 +9,7 @@ namespace Encapsulamento {
 
             p.Nome = "TV 4K";
 
+            var name = p.Nome;
 
             Console.WriteLine(p.Preco);
             Console.WriteLine(p.Nome);
