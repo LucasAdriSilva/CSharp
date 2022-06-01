@@ -12,21 +12,40 @@ namespace Encapsulamento {
         private double _preco;
         private int _quantidade;
 
-        public string GetNome() { 
-            return _nome;   
+        public string Nome {
+            get { return _nome; }
+            set {
+                if (value != null && value.Length > 1) {
+                    _nome = value;
+                }
+            }
         }
 
-        public void SetNome(string nome) { 
-            _nome = nome;   
+        public double Preco { 
+            get { return _preco; }
         }
 
-        public double GetPreco() {
-            return _preco;
+        public int Quantidade {
+            get { return _quantidade; }
         }
 
-        public int GetQuantiade() {
-            return _quantidade;
-        }
+        //public string GetNome() { 
+        //    return _nome;   
+        //}
+
+        //public void SetNome(string nome) { 
+        //    if(nome != null && nome.Length > 1){
+        //    _nome = nome;
+        //    }
+        //}
+
+        //public double GetPreco() {
+        //    return _preco;
+        //}
+
+        //public int GetQuantiade() {
+        //    return _quantidade;
+        //}
 
 
 
@@ -34,7 +53,7 @@ namespace Encapsulamento {
             _nome = nome;
             _preco = preco;
             _quantidade = quantidade;
-        }   
+        }
 
         public double ValorTotalEmEstoque() {
             return _preco * _quantidade;

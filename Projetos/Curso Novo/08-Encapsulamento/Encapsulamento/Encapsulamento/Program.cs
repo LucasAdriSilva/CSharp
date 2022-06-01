@@ -7,10 +7,12 @@ namespace Encapsulamento {
         static void Main(string[] args) {
             Produto p = new Produto("TV", 500.00, 10);
 
-            p.SetNome("Tv 4K");
-            Console.WriteLine(p.GetPreco());
+            p.Nome = "TV 4K";
 
-            Console.WriteLine(p.ToString());
+
+            Console.WriteLine(p.Preco);
+            Console.WriteLine(p.Nome);
+            Console.WriteLine(p.Quantidade);
         }
     }
 }
