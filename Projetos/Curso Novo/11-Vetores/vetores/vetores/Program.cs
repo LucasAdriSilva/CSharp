@@ -24,6 +24,7 @@ namespace vetores {
             }
             double avg = sum / n;
             Console.WriteLine($"A média de altura é: {avg.ToString("F2")}");
+            Console.ReadKey();
         }
     }
 }
