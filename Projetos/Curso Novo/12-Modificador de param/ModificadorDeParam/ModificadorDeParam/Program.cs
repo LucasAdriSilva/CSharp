@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace ModificadorDeParam {
     internal class Program {
         static void Main(string[] args) {
+
+            int res;
             int s1 = Calculator.Sum(2, 5);
             Console.WriteLine(s1);
 
@@ -20,7 +22,18 @@ namespace ModificadorDeParam {
 
             Console.WriteLine(s4);
 
+            //usando ref não precisa inicar a variavel
+            Calculator.Triple(ref s4);
+            Console.WriteLine(s4);
+
+            //Usando out nao usando uma variavel iniciado
+            Calculator.Triplee(s4, out res);
+            Console.WriteLine(s4);
+
+
             Console.ReadKey();
+
+
         }
     }
 }
