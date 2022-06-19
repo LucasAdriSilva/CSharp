@@ -93,6 +93,21 @@ namespace DataTime {
             string s7 = d.ToString("yyyy-MM-dd HH:mm:ss.fff");
             Console.WriteLine(s7);
 
+            Console.WriteLine("--------------------------------------------------------------------------------------");
+            Console.ReadKey();
+
+            DateTime temp1 = DateTime.Now;
+            DateTime temp2 = new DateTime(2023,03,20);  
+
+            DateTime bri = temp1.AddHours(2);
+
+            //Calcula a diferença entre 2 datas e retorna um TimeSpan
+            TimeSpan Dif = temp2.Subtract(temp1);
+            Console.WriteLine(Dif);
+
+
+            Console.WriteLine(bri);
+
             Console.ReadKey();
         }
     }
