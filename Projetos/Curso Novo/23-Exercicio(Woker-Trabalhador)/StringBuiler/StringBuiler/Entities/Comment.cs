@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace StringBuiler.Entities
 {
     internal class Comment
@@ -13,5 +15,7 @@ namespace StringBuiler.Entities
         {
             text = Text;
         }
+
+      
     }
 }
